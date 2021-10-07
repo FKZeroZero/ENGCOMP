@@ -6,16 +6,13 @@ Algoritmo "semnome"
 // Data atual  : 04/10/2021
 Var
 n : inteiro
-
-
 Inicio
 escreval("Digite um numero")
 leia(n)
 
 se (n % 2) = 0 entao
-escreval("O numero ", n, " eh par")
+    escreval("O numero ", n, " eh par")
 senao
-escreval("O numero ", n, " eh impar")
+    escreval("O numero ", n, " eh impar")
 fimse
-
 Fimalgoritmo

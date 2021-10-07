@@ -15,9 +15,7 @@ leia(M)
 escreval("Digite o valor de N:")
 leia(N)
 
-LOGIC <- (N*2) = M
+LOGIC := (N*2) = M
 
 escreva("A variavel LOGIC eh ", LOGIC)
-
-
 Fimalgoritmo

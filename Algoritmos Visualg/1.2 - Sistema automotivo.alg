@@ -8,7 +8,6 @@ Algoritmo "semnome"
 Var
 p1, p2, p3, p4, igni, ligado : logico
 
-
 Inicio
 escreval("Escreva VERDADEIRO ou FALSO para as perguntas a seguir:")
 escreval("O carro estah ligado?")

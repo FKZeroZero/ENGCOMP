@@ -12,14 +12,14 @@ op : caractere
 
 Inicio
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-rodar <- VERDADEIRO //Determina se o programa deve finalizar ou nao
-op <- "X"
-i1 <- 0
-i2 <- 0
-i3 <- 0
-r1 <- 0
-r2 <- 0
-r3 <- 0
+rodar := VERDADEIRO //Determina se o programa deve finalizar ou nao
+op := "X"
+i1 := 0
+i2 := 0
+i3 := 0
+r1 := 0
+r2 := 0
+r3 := 0
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 enquanto (rodar = VERDADEIRO) faca //loop para evitar que o programa feche
@@ -31,7 +31,7 @@ enquanto (rodar = VERDADEIRO) faca //loop para evitar que o programa feche
          escreval("Item D")
          escreval("Item E")
 
-         op <- "X" //comecar o loop do menu de principal
+         op := "X" //comecar o loop do menu de principal
          enquanto op = "X" faca
                   escreval("Digite a letra da opcao desejada(MAIUSCULA):")
                   leia(op)
@@ -43,11 +43,11 @@ enquanto (rodar = VERDADEIRO) faca //loop para evitar que o programa feche
 //Enunciado
                              escreval("Determinar o maior numero entre 3 fornecidos pelo usuario:")
                              escreval("Digite o primeiro numero")
-                             leia (i1)
+                             leia(i1)
                              escreval("Digite o segundo numero")
                              leia(i2)
                              escreval("Digite o terceiro numero")
-                             leia (i3)
+                             leia(i3)
 
 //Logica:
                              se (i1>i2) entao
@@ -152,7 +152,7 @@ enquanto (rodar = VERDADEIRO) faca //loop para evitar que o programa feche
                              escreval("Digite o salario:")
                              leia(r3)
 //Logica
-                             r4 <- r3*0,35 //valor maximo da parcela
+                             r4 := r3*0,35 //valor maximo da parcela
                              escreval("")
                              se (r1 / r2) > r3 entao
                                  escreval("O emprestimo foi negado.")
@@ -162,24 +162,24 @@ enquanto (rodar = VERDADEIRO) faca //loop para evitar que o programa feche
 
 //====================Caso selecione uma opcao nao disponivel==================
                              outrocaso
-                             op <- "X"
+                             op := "X"
 //op recebe o valor inicial novamente e o menu eh exibido
                              escreval("Opcao invalida, tente novamente")
                   fimescolha
 
          fimenquanto //fim do menu de opcoes
-         op <- "X"
+         op := "X"
     enquanto op = "X" faca   //Definir se o programa deve finalizar ou nao
     escreval("Deseja executar o programa novamente? (S/N)")
     leia(op)
     se op = "S" entao
-    rodar <- VERDADEIRO
+    rodar := VERDADEIRO
     senao
         se op = "N" entao
-        rodar <- FALSO
+        rodar := FALSO
         senao
             escreval("Opcao invalida")
-            op <- "X"
+            op := "X"
         fimse
     fimse
     fimenquanto

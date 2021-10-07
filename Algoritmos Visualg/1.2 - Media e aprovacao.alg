@@ -7,7 +7,6 @@ Algoritmo "semnome"
 Var
 n1, n2 : real
 
-
 Inicio
 escreval("Informe a primeira nota:")
 leia(n1)
@@ -15,9 +14,9 @@ escreval("Informe a segunda nota:")
 leia(n2)
 
 se ((n1 + n2) / 2) < 7 entao
-escreval("A media do aluno eh ", ((n1 + n2) / 2), " e o aluno foi REPROVADO.")
+    escreval("A media do aluno eh ", ((n1 + n2) / 2), " e o aluno foi REPROVADO.")
 senao
-escreval("A media do aluno eh ", ((n1 + n2) / 2), " e o aluno foi APROVADO.")
+    escreval("A media do aluno eh ", ((n1 + n2) / 2), " e o aluno foi APROVADO.")
 fimse
 
 Fimalgoritmo

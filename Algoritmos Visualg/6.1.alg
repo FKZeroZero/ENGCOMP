@@ -15,12 +15,12 @@ leia(num)
 escreval("Digite o numero de casas decimais:")
 leia(precisao)
 
-denominador <- (10 ^ precisao)
-num2 <- (num * 10000)
-resto <- num2 % 10000
-frac <- resto / 10000
-numInt <- num - frac
-numerador <- frac * denominador
+denominador := (10 ^ precisao)
+num2 := (num * 10000)
+resto := num2 % 10000
+frac := resto / 10000
+numInt := num - frac
+numerador := frac * denominador
 
 escreval("O numero real", num, " pode ser representado na forma:")
 escreval("   ", numerador)

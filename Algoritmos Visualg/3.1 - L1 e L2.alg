@@ -16,12 +16,12 @@ leia(L2)
 
 se L1 = FALSO entao
     se L2 = FALSO entao
-        L <- VERDADEIRO
+        L := VERDADEIRO
     senao
-        L <- FALSO
+        L := FALSO
     fimse
 senao
-    L <- FALSO
+    L := FALSO
 fimse
 
 escreva("A variavel L eh ", L)
