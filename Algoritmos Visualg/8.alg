@@ -55,10 +55,16 @@ enquanto rodar <> 999 faca
             limpatela
         caso 999
             rodar := voto
-            escreval("O total foi de", to, " votos.")
-            escreval(ot, " pessoas acharam otimo, totalizando ", ((ot*100) / to):4:2, " por cento dos votos")
-            escreval(no, " pessoas acharam normal, totalizando ", ((no*100) / to):4:2, " por cento dos votos")
-            escreval(ru, " pessoas acharam ruim, totalizando ", ((ru*100) / to):4:2, " por cento dos votos")
+            se to > 0 entao
+                escreval("O total foi de", to, " votos.")
+                escreval(ot, " pessoas acharam otimo, totalizando ", ((ot*100) / to):4:2, " por cento dos votos")
+                escreval(no, " pessoas acharam normal, totalizando ", ((no*100) / to):4:2, " por cento dos votos")
+                escreval(ru, " pessoas acharam ruim, totalizando ", ((ru*100) / to):4:2, " por cento dos votos")
+            senao
+                se to = 0 entao
+                    escreval("Nao houveram votos")
+                fimse
+            fimse
         outrocaso
             limpatela
             escreval("Opcao invalida! Tente novamente!")
