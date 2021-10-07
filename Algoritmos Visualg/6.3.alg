@@ -12,11 +12,11 @@ Inicio
 escreval("Insira um numero:")
 leia(num)
 
-par <- (num % 2) = 0
-impar <- NAO par
-m3 <- (num % 3) = 0
-m5 <- (num % 5) = 0
-m7 <- (num % 7) = 0
+par := (num % 2) = 0
+impar := NAO par
+m3 := (num % 3) = 0
+m5 := (num % 5) = 0
+m7 := (num % 7) = 0
 
 escreval("O numero eh:")
 escreval("Par:", par)
@@ -24,8 +24,5 @@ escreval("Impar:", impar)
 escreval("Multiplo de 3:", m3)
 escreval("Multiplo de 5:", m5)
 escreval("Multiplo de 7:", m7)
-
-
-
 
 Fimalgoritmo

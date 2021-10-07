@@ -5,23 +5,22 @@ Algoritmo "semnome"
 // Autor(a)    : Gustavo de Sousa Marques
 // Data atual  : 06/10/2021
 Var
-// Seção de Declarações das variáveis 
 num, num2, resto, frac, numInt, denominador, numerador : real
 precisao : inteiro
 
 Inicio
 escreval("O algoritmo esta limitado ao uso de 4 casas decimais")
-escreval("Digite um numero decimal:")
+escreval("Digite um numero real:")
 leia(num)
 escreval("Digite o numero de casas decimais:")
 leia(precisao)
+
 denominador <- (10 ^ precisao)
 num2 <- (num * 10000)
 resto <- num2 % 10000
 frac <- resto / 10000
 numInt <- num - frac
 numerador <- frac * denominador
-
 
 escreval("O numero real", num, " pode ser representado na forma:")
 escreval("   ", numerador)
