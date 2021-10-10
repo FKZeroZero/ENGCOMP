@@ -26,7 +26,6 @@ voto := 0
 rodar := 1
 
 enquanto rodar <> 999 faca
-
     escreval("Indique qual a sua opniao sobre o sabor dos chocolates com")
     escreval("o numero correspondente, ou digitar 999 para finalizar:")
     escreval("")
@@ -70,9 +69,5 @@ enquanto rodar <> 999 faca
             escreval("Opcao invalida! Tente novamente!")
             voto := 0
     fimescolha
-
 fimenquanto
-
-
-
 Fimalgoritmo

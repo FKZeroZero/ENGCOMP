@@ -6,7 +6,7 @@ Algoritmo "semnome"
 // Data atual  : 06/10/2021
 Var
 maior, menor, i : inteiro
-vet : vetor [1..10] de inteiro
+vet : vetor [1..8] de inteiro
 
 Inicio
 //Inicializar variaveis
@@ -27,8 +27,8 @@ para i de 1 ate 8 faca
     se vet[i] > maior entao
         maior := vet[i]
     fimse
-        se vet[i] < menor entao
-            menor := vet[i]
+    se vet[i] < menor entao
+        menor := vet[i]
     fimse
 fimpara
 
