@@ -72,14 +72,17 @@ enquanto r = 0 faca
                 se (s > 59) entao
                     s := 0
                     m := m + 1
+
+                    se (m > 59) entao
+                        m := 0
+                        h := h + 1
+                        
+                        se (h > 23) entao
+                            h := 0
+                        fimse
+                    fimse
                 fimse
-                se (m > 59) entao
-                    m := 0
-                    h := h + 1
-                fimse
-                se (h > 23) entao
-                    h := 0
-                fimse
+
                 timer 1000
                 timer 0
 
@@ -101,13 +104,15 @@ enquanto r = 0 faca
                     se (s > 59) entao
                         s := 0
                         m := m + 1
-                    fimse
-                    se (m > 59) entao
-                        m := 0
-                        h := h + 1
-                    fimse
-                    se (h > 23) entao
-                        teste := 0
+                        
+                        se (m > 59) entao
+                            m := 0
+                            h := h + 1
+
+                            se (h > 23) entao
+                                teste := 0
+                            fimse
+                        fimse
                     fimse
                     
                     timer 1000
@@ -168,15 +173,17 @@ enquanto r = 0 faca
                     se (s < 0) entao
                         s := 59
                         m := m - 1
-                    fimse
-                    se (m < 0) entao
-                        m := 59
-                        h := h - 1
-                    fimse
-                    se (h < 0) entao
-                        s := -1
-                        m := -1
-                        h := -1
+
+                        se (m < 0) entao
+                            m := 59
+                            h := h - 1
+                            
+                            se (h < 0) entao
+                                s := -1
+                                m := -1
+                                h := -1
+                            fimse
+                        fimse
                     fimse
                     
                     timer 1000
