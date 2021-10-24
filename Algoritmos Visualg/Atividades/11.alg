@@ -138,10 +138,10 @@ escreval("|", auxIntM, " pessoas do sexo masculino;")
 escreval("|", auxIntF, " pessoas do sexo feminino;")
 escreval("| ")
 se (auxIntM <> 0) entao
-escreval("| O salario medio do o sexo masculino foi de R$", (auxRealM/auxIntM):6:2,";")
+escreval("| O salario medio do sexo masculino foi de R$", (auxRealM/auxIntM):6:2,";")
 fimse
 se (auxIntF <> 0) entao
-escreval("| O salario medio do o sexo feminino foi de R$", (auxRealF/auxIntF):6:2, ".")
+escreval("| O salario medio do sexo feminino foi de R$", (auxRealF/auxIntF):6:2, ".")
 fimse
 escreval("| ")
 
