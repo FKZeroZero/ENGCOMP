@@ -52,7 +52,6 @@ para i de 2000 ate 2020 faca
     fimse
 fimpara
 
-escreval("Entre os meses", maiorConsumoM, " dos outros anos, o menor consumo registrado foi")
-escreval("no ano",  menorMaior, " que registrou um consumo de", consumo[menorMaior, maiorConsumoM], " metros")
-escreval("cubicos de agua.")
+escreval("Entre os meses", maiorConsumoM, " dos outros anos, o menor consumo registrado")
+escreval("foi no ano",  menorMaior, " que registrou um consumo de", consumo[menorMaior, maiorConsumoM], " m3")
 Fimalgoritmo
