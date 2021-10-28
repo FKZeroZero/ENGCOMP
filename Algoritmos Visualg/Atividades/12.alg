@@ -37,7 +37,7 @@ para i de 2000 ate 2020 faca
 fimpara
 
 escreval("O consumo medio de agua na empresa nos ultimos 20 anos")
-escreval("foi de", totalGeral/240, " metros cubicos por mes.")
+escreval("foi de ", (totalGeral/240):6:2, " metros cubicos por mes.")
 
 escreval("O menor consumo foi de", consumo[menorConsumoA, menorConsumoM], " metros cubicos, no mes", menorConsumoM, " do ano", menorConsumoA)
 escreval("O maior consumo foi de", consumo[maiorConsumoA, maiorConsumoM], " metros cubicos, no mes", maiorConsumoM, " do ano", maiorConsumoA)
