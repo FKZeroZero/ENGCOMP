@@ -42,8 +42,10 @@ escreval("foi de ", (totalGeral/240):6:2, " metros cubicos por mes.")
 escreval("O menor consumo foi de", consumo[menorConsumoA, menorConsumoM], " metros cubicos, no mes", menorConsumoM, " do ano", menorConsumoA)
 escreval("O maior consumo foi de", consumo[maiorConsumoA, maiorConsumoM], " metros cubicos, no mes", maiorConsumoM, " do ano", maiorConsumoA)
 
+menorMaior := maiorConsumoA
+
 para i de 2000 ate 2020 faca
-    se (consumo[i, maiorConsumoM] < consumo[maiorConsumoA, maiorConsumoM]) entao
+    se (consumo[i, maiorConsumoM] < consumo[menorMaior, maiorConsumoM]) entao
         menormaior := i
     fimse
 fimpara
